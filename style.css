@@ -17,10 +17,49 @@
 #quote-box {
   background-color: #fff;
   border-radius: 0.5rem;
+  font-size: 1.75rem;
+  width: 35rem;
+}
+
+#author {
+  text-align: right;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+#tweet-quote {
+  font-size: 1.75rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #fff;
+  background-color: #9B59B6;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #9B59B6 !important;
+  border-color: #9B59B6 !important;
+  border-radius: 0.5rem;
+  height: 2.5rem;
 }
 
 #by {
   color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+  #quote-box {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  #quote-box {
+    padding: 0.5rem !important;
+    width: 17rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
