@@ -17,26 +17,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- React -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   <title>Random Quote Machine</title>
 </head>
 <body>
 
   <div class="main-container d-flex flex-column justify-content-center align-items-center">
     <div id="quote-box" class="p-5 mb-2">
-      <p id="text" class="text-center">
-        <i class="fa-solid fa-quote-left d-inline"></i>
-        <span class="ps-1">It is never too late to be what you might have been.</span>
-      </p>
-      <p id="author">- <span>George Eliot</span></p>
-      <div class="buttons d-flex justify-content-between align-items-center pt-2">
-        <a id="tweet-quote"><i class="fab fa-twitter"></i></a>
-        <button type="button" id="new-quote" class="btn btn-primary">New quote</button>
-      </div>
     </div>
     <p class="d-block" id="by">By Danylo Sokol</p>
   </div>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="./script.js"></script>
