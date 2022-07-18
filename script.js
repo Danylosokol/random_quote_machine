@@ -74,7 +74,8 @@ var QuoteBox = function (_React$Component3) {
 
     _this3.state = {
       quote: "",
-      author: ""
+      author: "",
+      color: Math.floor(Math.random() * 10 + 1)
     };
     _this3.newQuote = _this3.newQuote.bind(_this3);
     return _this3;
@@ -88,9 +89,12 @@ var QuoteBox = function (_React$Component3) {
       fetch("https://api.quotable.io/random").then(function (res) {
         return res.json();
       }).then(function (result) {
-        _this4.setState({
-          quote: result.content,
-          author: result.author
+        _this4.setState(function (state) {
+          return {
+            quote: result.content,
+            author: result.author,
+            color: state.color == Math.floor(Math.random() * 10 + 1) ? ++state.color : Math.floor(Math.random() * 10 + 1)
+          };
         });
       }, function (error) {
         console.log(error);
@@ -104,22 +108,45 @@ var QuoteBox = function (_React$Component3) {
       }
       return React.createElement(
         "div",
-        null,
-        React.createElement(Quote, { quote: this.state.quote }),
-        React.createElement(Autor, { author: this.state.author }),
+        {
+          "class": "flex-container d-flex flex-column justify-content-center align-items-center color-scheme-bg-" + this.state.color
+        },
         React.createElement(
           "div",
-          { "class": "buttons d-flex justify-content-between align-items-center pt-2" },
+          {
+            id: "quote-box",
+            "class": "color-scheme-text-" + this.state.color + " p-5 mb-2"
+          },
+          React.createElement(Quote, { quote: this.state.quote }),
+          React.createElement(Autor, { author: this.state.author }),
           React.createElement(
-            "a",
-            { id: "tweet-quote" },
-            React.createElement("i", { "class": "fab fa-twitter" })
-          ),
-          React.createElement(
-            "button",
-            { onClick: this.newQuote, type: "button", id: "new-quote", "class": "btn btn-primary" },
-            "New quote"
+            "div",
+            { "class": "buttons d-flex justify-content-between align-items-center pt-2" },
+            React.createElement(
+              "a",
+              {
+                id: "tweet-quote",
+                href: "https://twitter.com/intent/tweet?text=" + this.state.quote + " " + this.state.author + "&hashtags=quotes",
+                "class": "color-scheme-bg-" + this.state.color
+              },
+              React.createElement("i", { "class": "fab fa-twitter" })
+            ),
+            React.createElement(
+              "button",
+              {
+                onClick: this.newQuote,
+                type: "button",
+                id: "new-quote",
+                "class": "btn btn-primary color-scheme-bg-" + this.state.color
+              },
+              "New quote"
+            )
           )
+        ),
+        React.createElement(
+          "p",
+          { "class": "d-block", id: "by" },
+          "By Danylo Sokol"
         )
       );
     }
@@ -128,5 +155,5 @@ var QuoteBox = function (_React$Component3) {
   return QuoteBox;
 }(React.Component);
 
-var quoteBox = document.querySelector('#quote-box');
-ReactDOM.render(React.createElement(QuoteBox, null), quoteBox);
+var container = document.querySelector('.main-container');
+ReactDOM.render(React.createElement(QuoteBox, null), container);

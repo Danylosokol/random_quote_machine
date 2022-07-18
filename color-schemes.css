@@ -1,0 +1,110 @@
+.color-scheme-bg-1{
+  background-color: #9B59B6 !important;
+  border-color: #9B59B6 !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-1{
+  color: #9B59B6;
+  transition: color 1s;
+}
+
+.color-scheme-bg-2{
+  background-color: #79B4B7 !important;
+  border-color: #79B4B7 !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-2{
+  color: #79B4B7;
+  transition: color 1s;
+}
+
+.color-scheme-bg-3{
+  background-color: #D49A89 !important;
+  border-color: #D49A89 !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-3{
+  color: #D49A89 ;
+  transition: color 1s;
+}
+
+.color-scheme-bg-4{
+  background-color: #6E7DA2 !important;
+  border-color: #6E7DA2 !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-4{
+  color: #6E7DA2 ;
+  transition: color 1s;
+}
+
+.color-scheme-bg-5{
+  background-color: #D77FA1 !important;
+  border-color: #D77FA1 !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-5{
+  color: #D77FA1 ;
+  transition: color 1s;
+}
+
+.color-scheme-bg-6{
+  background-color: #E2C275!important;
+  border-color: #E2C275 !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-6{
+  color: #E2C275 ;
+  transition: color 1s;
+}
+
+.color-scheme-bg-7{
+  background-color: #064420!important;
+  border-color: #064420 !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-7{
+  color: #064420 ;
+  transition: color 1s;
+}
+
+.color-scheme-bg-8{
+  background-color: #625757!important;
+  border-color: #625757 !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-8{
+  color: #625757 ;
+  transition: color 1s;
+}
+
+.color-scheme-bg-9{
+  background-color: #78B7BB!important;
+  border-color: #78B7BB !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-9{
+  color: #78B7BB ;
+  transition: color 1s;
+}
+
+.color-scheme-bg-10{
+  background-color: #C1A3A3!important;
+  border-color: #C1A3A3 !important;
+  transition: background-color 1s, border-color  1s;
+}
+
+.color-scheme-text-10{
+  color: #C1A3A3 ;
+  transition: color 1s;
+}
+

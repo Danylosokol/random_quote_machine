@@ -7,15 +7,17 @@
 .main-container {
   height: 100vh;
   width: 100vw;
-  background-color: #9B59B6;
   padding-bottom: 20vh;
-  color: #9B59B6;
   font-size: 18px;
   font: 100% Roboto, sans-serif !important;
 }
 
+.flex-container {
+  height: 100vh;
+}
+
 #quote-box {
-  background-color: #fff;
+  background-color: #fff !important;
   border-radius: 0.5rem;
   font-size: 1.75rem;
   width: 35rem;
@@ -32,18 +34,22 @@
   height: 2.5rem;
   width: 2.5rem;
   color: #fff;
-  background-color: #9B59B6;
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .btn-primary {
-  background-color: #9B59B6 !important;
-  border-color: #9B59B6 !important;
   border-radius: 0.5rem;
   height: 2.5rem;
+  box-shadow: none !important;
+}
+
+#tweet-quote:hover,
+.btn-primary:hover{
+  filter: brightness(95%);
 }
 
 #by {
